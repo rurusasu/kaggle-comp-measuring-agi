@@ -11,6 +11,11 @@ across three task families:
 Designed for the "Measuring Progress Toward AGI" hackathon (Metacognition track).
 """
 
+import subprocess
+import sys
+
+subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "kaggle-benchmarks"])
+
 import random
 import re
 from dataclasses import dataclass
