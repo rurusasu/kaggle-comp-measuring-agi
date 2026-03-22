@@ -1,0 +1,16 @@
+{
+  "id": "koheimiki/measuring-agi-metacognition-benchmark",
+  "title": "Measuring AGI - Metacognition Benchmark",
+  "code_file": "notebook.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [
+    "kaggle-measuring-agi"
+  ],
+  "kernel_sources": [],
+  "model_sources": []
+}
