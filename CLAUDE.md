@@ -34,6 +34,46 @@ AIシステムの認知能力を評価するベンチマークを設計する。
 - トラック別賞: 各トラック上位2名に $10,000（計 $100,000）
 - グランプリ: 全体上位4名に $25,000（計 $100,000）
 
+## Current Approach
+
+### Track: Metacognition
+
+ベンチマーク設計は `docs/benchmark-design.md` に詳述。3つのタスクファミリー:
+
+1. **Confidence Calibration Battery** (200問) — 回答と信頼度を表明させ、ECE/Brier Score で評価
+2. **Error Detection and Correction** (50問) — Phase A で解答 → Phase B で自己レビュー・修正
+3. **Knowledge Boundary Probing** (150問) — 「知っている/不確実/知らない」の自己分類精度
+
+### Workflow
+
+1. `kaggle-benchmarks` SDK をインストール（`pip install kaggle-benchmarks`）
+2. 3タスクの問題セットを生成（手続き的生成 + 手動作成）
+3. SDK でベンチマークとタスクを作成・登録
+4. フロンティアモデル（Gemini, GPT-4, Claude）で実行してスコア収集
+5. Kaggle Writeup（1,500語以内）を作成
+6. ベンチマークを Writeup にリンクして提出
+
+### File Layout
+
+- `docs/benchmark-design.md` — ベンチマーク設計全文（タスク詳細、スコアリング、人間ベースライン計画）
+- `src/` — 問題生成・評価スクリプト（未実装、これから作成）
+
+### Submission Checklist
+
+- [ ] kaggle-benchmarks SDK でベンチマーク作成
+- [ ] 3タスクの問題セット生成・登録
+- [ ] フロンティアモデルでスコア収集
+- [ ] Writeup 執筆（1,500語、カバー画像付き）
+- [ ] Writeup にベンチマークをリンク
+- [ ] 提出ボタン押下（締切: 2026-04-16）
+
+### Improvement Ideas
+
+- タスク数を増やして統計的検出力を向上
+- より多様な認知領域（視覚推論、時間推論）を追加
+- 人間ベースラインの実データ収集（Prolific 等）
+- 複数モデル間の比較分析を Writeup に含める
+
 ## Documentation
 
 **IMPORTANT: Before starting any implementation work, you MUST read the relevant docs first.**
