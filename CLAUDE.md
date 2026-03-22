@@ -78,8 +78,9 @@ AIシステムの認知能力を評価するベンチマークを設計する。
 
 ### kaggle-benchmarks SDK
 
-1. **ローカルでは動かない**: `MODEL_PROXY_URL` 環境変数が必要で、Kaggle Notebook 内でのみ利用可能。ローカル開発はテストケースの生成ロジックまで。SDK 統合は Kaggle 上で行う。
-2. **$50/日の追加 quota**: コンペ参加後、ベンチマーク実行用に追加 GPU quota が付与される。これを使ってフロンティアモデルに対するスコア収集を行う。
+1. **ローカルでも `kaggle kernels push` でも動かない**: `MODEL_PROXY_URL` 環境変数が必要で、コンペ専用の Benchmark 作成環境でのみ利用可能。通常の Kaggle Notebook では SDK が初期化に失敗する。
+2. **Kaggle Web UI から Benchmark を作成する必要がある**: Notebooks タブから "New Notebook" → 環境に `kaggle-benchmarks` が自動設定される。`kaggle kernels push` は使えない。
+3. **$50/日の追加 quota**: コンペ参加後、ベンチマーク実行用に追加 GPU quota が付与される。これを使ってフロンティアモデルに対するスコア収集を行う。
 
 ### 提出形式の特殊性
 

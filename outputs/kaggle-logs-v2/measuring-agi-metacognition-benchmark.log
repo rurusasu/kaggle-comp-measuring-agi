@@ -1,0 +1,19 @@
+[{"stream_name":"stdout","time":6.500403062,"data":"   „ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª 88.2/88.2 kB 4.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":6.53089461,"data":"   „ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª 92.5/92.5 kB 3.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":7.012571072,"data":"   „ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª 46.2/46.2 MB 37.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stderr","time":24.726594352,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":24.72665707,"data":"  File \"/kaggle/src/script.py\", line 26, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":24.726665295,"data":"    import kaggle_benchmarks as kbench\n"}
+,{"stream_name":"stderr","time":24.72667553,"data":"  File \"/usr/local/lib/python3.12/dist-packages/kaggle_benchmarks/__init__.py\", line 35, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":24.72690047,"data":"    llm = kaggle.load_default_model()\n"}
+,{"stream_name":"stderr","time":24.726925641,"data":"          ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":24.726931014,"data":"  File \"/usr/local/lib/python3.12/dist-packages/kaggle_benchmarks/kaggle/models.py\", line 25, in load_default_model\n"}
+,{"stream_name":"stderr","time":24.727001013,"data":"    raise RuntimeError(\n"}
+,{"stream_name":"stderr","time":24.727014828,"data":"RuntimeError: Environment variable MODEL_PROXY_URL is not set. Did you forget to create .env file?\n"}
+,{"stream_name":"stderr","time":28.262889007,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":28.262930105,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":28.484280317,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":28.484325922,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":29.383388553,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":30.494132806,"data":"[NbConvertApp] Writing 366705 bytes to __results__.html\n"}
+]
